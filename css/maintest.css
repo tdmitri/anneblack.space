@@ -1,0 +1,42 @@
+@-webkit-keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        transform: rotate(0deg);
+        background: #af9cda;
+    }
+    25% {
+        border-radius: 50% 0 10% 0;
+        transform: rotate(45deg);
+        background: #db999d;
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        transform: rotate(90deg);
+        background: #f39b7e;
+    }
+    75% {
+        border-radius: 50% 50% 50% 30%;
+        transform: rotate(135deg);
+        background: #bc96c5;
+    }
+    100% {
+        border-radius: 50%;
+        transform: rotate(180deg);
+        background: #edb092;
+    }
+}
+
+.logo-circle-transform {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    outline: 1px solid transparent;
+    -webkit-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+    -moz-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+    -ms-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+    -o-animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+    animation: square-to-circle 3s 1s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+    position: relative;
+    margin-bottom: 35px;
+}
